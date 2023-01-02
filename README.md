@@ -86,3 +86,7 @@
 4. Make sure you use only the given data and dont create new data, as chaging data might result in giving you zero marks.
 
 **Note** - This might not be all the things, you are free to use other components.
+
+### Fun fact
+
+Try running `npm run cypress:run` post completion of assignment, it will generate `marks.json` which will have your marks.
