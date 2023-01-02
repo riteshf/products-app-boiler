@@ -1,11 +1,3 @@
-**Note**: Use of Redux for this assignment is Mandatory.
-
-## Problem
-
-- Create the following APP: [Products Routes WebApp](https://b22-c2.vercel.app/) using the Provided Boilerplate.
-
-**_Note_**: Make sure you start `json-server` on `8080` port with provided `db.json` file, then only you will be able to see data on this website.
-
 ## Getting Started
 
 **_Note_**: Do not clone or fork, download as ZIP.
@@ -17,38 +9,15 @@
 5. npm start
 6. Make sure your `json-server` is running on port `8080`, `db.json` file is provided.
 
-**_Note_**: Libraries are not installed, you need to install all the required libraries yourself.
+## Problem
 
-## Understanding Component Structure
+- Create the following APP: [Products Routes WebApp](https://b22-c2.vercel.app/) using the Provided Boilerplate.
 
-- [App](./src/App.js)
-  - [Navbar](./src/components/Navbar/Navbar.jsx) // common for all routes
-  - [Home](./src/pages/Home.jsx) // Protected Route, accessible post login
-    - [Products](./src/components/Products/Products.jsx)
-      - [Product](./src/components/Products/Product/Product.jsx)
-  - [Login](./src/pages/Login.jsx) //Public Route
+**_Notes_**:
 
-**Note** - `Make sure you use only the given components and dont create new files and folders. Changing component name, structures might result in giving you zero marks.`
-
-### Redux reucers to reuse
-
-- [store](./src/store/store.js)
-  - [auth](./src/store/auth/auth.reducer.js)
-  - [cart](./src/store/cart/cart.reducer.js)
-  - [product](./src/store/product/product.reducer.js)
-
-**Note** - Make sure you use only the given `action`, `types`, `reducer`, `store` and also make sure you us ethe same keys as `auth`, `cart` and `product`.
-
-## Understanding Data Structure
-
-- [db.json](./db.json)
-  - Initial Products should be fetched using json-server only after user logs in.
-  - cartItems has following operations, accessible post login
-    - Add
-    - Delete
-    - Update Count
-
-**Note** - `Make sure you use only the given data and dont create new data. Changing data might result in giving you zero marks`
+- Make sure you start `json-server` on `8080` port with provided `db.json` file, then only you will be able to see data on this website.
+- Libraries are not installed, you need to install all the required libraries yourself.
+- Use of Redux for this assignment is Mandatory.
 
 ## Features to build
 
@@ -66,18 +35,54 @@
 7. Reset should reset the state to default/initial state.
 8. For login, use (reqres.in)[https://reqres.in]
 
+### Hints
+
+1. Understanding Component Structure
+
+   - [App](./src/App.js)
+
+     - [Navbar](./src/components/Navbar/Navbar.jsx) // common for all routes
+     - [Home](./src/pages/Home.jsx) // Protected Route, accessible post login
+       - [Products](./src/components/Products/Products.jsx)
+         - [Product](./src/components/Products/Product/Product.jsx)
+     - [Login](./src/pages/Login.jsx) // Public Route
+
+   - **Note** - `Make sure you use only the given components and dont create new files and folders. Changing component name, structures might result in giving you zero marks.`
+
+2. Redux reducers to reuse
+
+   - [store](./src/store/store.js)
+
+     - [auth](./src/store/auth/auth.reducer.js)
+     - [cart](./src/store/cart/cart.reducer.js)
+     - [product](./src/store/product/product.reducer.js)
+
+   - **Note** - Make sure you use only the given `action`, `types`, `reducer`, `store` and also make sure you us ethe same keys as `auth`, `cart` and `product`.
+
+3. Understanding Data Structure
+
+   - [db.json](./db.json)
+
+     - Initial Products should be fetched using json-server only after user logs in.
+     - cartItems has following operations, accessible post login
+       - Add
+       - Delete
+       - Update Count
+
+   - **Note** - `Make sure you use only the given data and dont create new data. Changing data might result in giving you zero marks`
+
+#### Submission
+
+- You need to Submit **Github Link** as well as **Deploymnet link**.
+- Deployment is Mandatory.
+- Make sure you use masai github account provided by MasaiSchool(submit link to correct folder of your repository on github).
+- Make Sure you have submit home page link.
+
 ## General Instructions (**_IMPORTANT_**)
 
-1. Do not use Global CSS, instead use `<componentName>.module.css` convention for CSS.
+1. Do not use Global CSS, instead use `<componentName>.module.css` convention for CSS or as UI Library.
 2. Do Not Remove `data-cy="xxxx"` from anywhere, this are used by testing tools to test your code, removal of this will lead to low score.
 3. Make sure you use only the given components and dont create new files and folders as chaging component name, structures might result in giving you zero marks
 4. Make sure you use only the given data and dont create new data, as chaging data might result in giving you zero marks.
 
 **Note** - This might not be all the things, you are free to use other components.
-
-#### Submission
-
-- You need to Submit Github Link as well as `netlify` link.
-- Deployment on `Netlify` is Mandatory.
-- Make sure you use masai github account provided by MasaiSchool(submit link to correct folder of your repository on github).
-- Make Sure you have netify account, else you will be getting zero marks as netify takes down your app in few days if your account does not exist.
